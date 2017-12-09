@@ -1,0 +1,165 @@
+#tray{
+    text-align:left;
+    width: 100px;
+	height: 200px;
+    margin: -10px ;
+    text-align: left;
+   border:solid;
+}
+#wrapper{
+    text-align:left;
+    width: 100%;
+    margin: -3px ;
+    text-align: center;
+	
+   
+}
+.aboutleft{
+	display: inline-block;
+    vertical-align:middle;
+   width: 175px;
+    height: 175px;
+    text-align: left;
+	background-image: url("Img/test4.png");
+	background-position: center center; 
+	background-size:100% 100%;
+}
+.aboutright{
+	background-image: url("Img/asset 8.png");
+	background-position: center center; 
+	background-size:100% 100%;
+    display: inline-block;
+	vertical-align:middle;
+     width: 490px;
+	height:200px;
+      text-align: left;
+}
+.vline{
+	position:relative;font-family: myFirstFont;
+	background-image: url("Img/bg31.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 375px;
+    
+	color:white;
+	font-size:60px;
+	text-align: center;
+   line-height: 250px;  
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 275px;
+    margin: 0;
+    
+
+}
+#footer {
+    background: #444444;
+    height: 40px;
+    font-family:LibreBaskerville-Regular;
+	font-size:20px;
+    color: #FFFFFF;
+    padding: 0px;
+	 position:fixed;
+   bottom:0;
+   width:100%;
+ 
+    bottom:0;
+}
+.sidenav {
+	font-family: Order Pizza;
+	color: Black;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.625);
+    overflow-x: hidden;
+    transition: 0.25s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+	font-family: Pizza;
+	color: Black;
+	
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: GREEN;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	color:black;
+	font-family: Impact;
+}
+.inner{ width: 73%; height: 60%; top: 18%; left:0%; margin: 0 auto; position: relative; background:#F0EBE8; }
+#IRight{ width: 73%; height: 60%; top: 18%; left:0%; margin: 0 auto; position: relative; background:#F0EBE8; }
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.bar1, .bar2, .bar3 {
+    width: 40px;
+    height: 7px;
+    background-color: #333;
+    margin: 6px 0;
+   
+} 
+@font-face {
+    font-family: myFirstFont;
+    src: url("fonts/DK Crayon Crumble.ttf");
+}
+@font-face{
+font-family: Order Pizza;
+src: url("fonts/Order Pizza.ttf");
+}
+@font-face{
+font-family: Blenda;
+src: url("fonts/Blenda Script.otf");
+}
+@font-face{
+font-family: LibreBaskerville-Regular;
+src: url("fonts/LibreBaskerville-Regular.ttf");
+}
+
+#body{
+	background-image: url("Img/bkd.jpg");
+
+	background-position: center center; 
+	background-size: cover;
+	
+    width:100%; height:100%; 
+}
+hr { 
+  border: 2; 
+  height: 0px; 
+  border-style: solid; 
+  border-color: green; 
+  border-width: 0 0 0 0; 
+  border-radius: 1px; 
+} 
+hr:before { 
+  display: block; 
+  content: ""; 
+ 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: green; 
+  border-width: 0 0 5px 0; 
+  border-radius: 8px; 
+}
