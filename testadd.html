@@ -164,10 +164,23 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-var m = 5;
-var n = 4;
+    var m = 5;//document.getElementById("input1").value;
+    var n = 4;//document.getElementById("input2").value;
 function createRight()
 {
+    /*if (document.getElementById("input1").value != null)
+    {
+        m = document.getElementById("input1").value;
+        n = document.getElementById("input2").value;
+    }*/
+    var input = prompt("Modify ?:", "5-4");
+    m = input.split("-")[0];
+    n = input.split("-")[1];
+    if (parseInt(n) > parseInt(m))
+    {
+        m = input.split("-")[1];
+        n = input.split("-")[0];
+    }
 	document.getElementById("middle").innerHTML=m+"-"+n;
 	for(var i = 0; i < n;i++)
 	{
@@ -224,6 +237,7 @@ function drop(ev) {
 
 </head>
 <body id="body" onload="createRight()">
+  
 <span style="font-size:30px;cursor:pointer; float:left; display:inline-block; "  onclick="openNav()"><div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div></span>
@@ -232,7 +246,10 @@ function drop(ev) {
 
 <span style="font-family:LibreBaskerville-Regular, serif; font-size:32px; color:green">&</span>
 <span style="font-family:Order Pizza; font-size:48px;">Pizza</span></center></h2>
-<hr width=10%  size="2">
+    <hr width=10% size="2">
+    <center><span id="p1" style="font-family:Blenda; font-size:32px; color:green">Feed the minions! (Drag pizza to feed them!)</span></center>
+
+
 </br>
 <div id = "wrapper">
 
@@ -243,12 +260,17 @@ function drop(ev) {
     </div>
 
     <div class = "vline" id="middle">
-    asdfjlaskdflaksdf</div>
+    5-4</div>
 
     <div class = "aboutright" id="right" >
         
     </div>
 </div>
+    </br>
+    </br>
+    </br>
+    <!--<input style="font-family:LibreBaskerville-Regular, serif; font-size:11px; color:green; background-color:transparent;" type="text" value="6" id="input1 "name="name" /> </br> </br>
+    <input type="text" id="input2 " style="font-family:LibreBaskerville-Regular, serif; font-size:11px; color:green; background-color:transparent;" value="4" />
 <!--<div id = "wrapper">
 
     <div class = "aboutleft" > 
@@ -266,7 +288,7 @@ function drop(ev) {
 </div> -->
 <div id="footer">
 	
-    <p>-  Designed and Developed by Aditya Bhatt and Hardik Jain . </p>
+    <p>-  Designed and Developed by Aditya Bhatt . </p>
 </div>
 
 <div id="mySidenav" class="sidenav">
